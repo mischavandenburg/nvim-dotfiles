@@ -9,7 +9,7 @@ return function(use)
 
 use 'kdheepak/lazygit.nvim'
 use 'rhysd/committia.vim'
-use 'xiyaowong/telescope-emoji.nvim'
+use 'nvim-telescope/telescope-symbols.nvim'
 
 -- colorschemes
 use 'wittyjudge/gruvbox-material.nvim'
