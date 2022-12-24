@@ -342,9 +342,18 @@ local servers = {
   pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},
-  yamlls = {},
+  yamlls = {
+    yaml = {
+      schemaStore = {
+        url = "https://www.schemastore.org/api/json/catalog.json",
+        enable = true,
+      },
+      schemas = {
+        kubernetes = "/*deploymen*.yaml"
+      }
+    }
+  },
   grammarly = {},
-  ansiblels = {},
   bashls = {},
   terraformls ={},
   sumneko_lua = {
