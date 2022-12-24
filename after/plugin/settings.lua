@@ -7,3 +7,6 @@ o.ignorecase = true
 o.termguicolors = true
 -- require('gruvbox-material').setup()
 g.gruvbox_material_enable_italic_comment = 1
+
+-- undo
+vim.opt.undodir = vim.fn.expand('~/.nvim/undodir')
