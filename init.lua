@@ -349,7 +349,10 @@ local servers = {
         enable = true,
       },
       schemas = {
-        kubernetes = "/*deploymen*.yaml"
+        kubernetes = {
+          "kubernetes/**/*.yaml",
+          "templates/**/*.yaml"
+        }
       }
     }
   },
