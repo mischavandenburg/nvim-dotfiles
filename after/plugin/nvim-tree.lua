@@ -25,6 +25,12 @@ require("nvim-tree").setup({
     group_empty = true,
   },
   filters = {
-    dotfiles = true,
+  },
+  actions = {
+    change_dir = {
+      global = true
+    },
   },
 })
+
+

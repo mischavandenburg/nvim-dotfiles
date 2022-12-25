@@ -25,5 +25,11 @@ vim.keymap.set('n', '<leader>u', '<cmd>UndotreeToggle<cr>', { desc = '[U]ndotree
 
 vim.keymap.set('n', '<leader>ft', '<cmd>NvimTreeToggle<cr>', { desc = '[F]ile tree [T]oggle' })
 vim.keymap.set('n', '<leader>ff', '<cmd>NvimTreeFocus<cr>', { desc = '[F]ile tree [F]ocus' })
+vim.keymap.set('n', '<leader>fc', '<cmd>NvimTreeFindFile<cr>', { desc = '[F]ile tree [C]urrent file focus' })
+
+-- open file tree in openstack repo and change directory to it
+vim.keymap.set('n', '<leader>fa', '<cmd>NvimTreeOpen ~/git/Openstack/<cr><cmd>cd ~/git/Openstack/<cr>', { desc = '[F]ile tree [A]msterdam' })
+vim.keymap.set('n', '<leader>fv', '<cmd>NvimTreeOpen ~/.config/nvim/<cr><cmd>cd ~/.config/nvim/<cr>', { desc = '[F]ile tree [V]im' })
+
 
 
