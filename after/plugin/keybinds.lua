@@ -17,3 +17,6 @@ map('n', '<leader>dl', '<cmd>%s/^\\s\\+$//<cr>')
 
 -- telescope
 vim.keymap.set('n', '<leader>se', require('telescope.builtin').symbols, { desc = '[S]earch [E]mojis' })
+
+-- undotree
+vim.keymap.set('n', '<leader>u', '<cmd>UndotreeToggle<cr>', { desc = '[U]ndotree' })

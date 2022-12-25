@@ -10,6 +10,7 @@ return function(use)
 use 'kdheepak/lazygit.nvim'
 use 'rhysd/committia.vim'
 use 'nvim-telescope/telescope-symbols.nvim'
+use 'mbbill/undotree'
 
 -- colorschemes
 use 'wittyjudge/gruvbox-material.nvim'
