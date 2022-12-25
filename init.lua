@@ -349,9 +349,15 @@ local servers = {
         enable = true,
       },
       schemas = {
+        -- i am not sure if i need the azure pipelines spefically. needs more experimentation.
+        azure_pipelines = {
+          url = "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/main/schemas/pipeline.schema.json",
+          "azure-pipelines.yaml"
+        },
         kubernetes = {
           "kubernetes/**/*.yaml",
-          "templates/**/*.yaml"
+          "!/azure-pipelines.yaml",
+          --  "templates/**/*.yaml"
         }
       }
     }
