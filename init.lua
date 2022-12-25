@@ -348,7 +348,11 @@ local servers = {
         url = "https://www.schemastore.org/api/json/catalog.json",
         enable = true,
       },
-      schemas = {}
+      schemas = {
+        kubernetes = {
+          "/*.k8s.yaml"
+        }
+      }
     }
   },
   grammarly = {},

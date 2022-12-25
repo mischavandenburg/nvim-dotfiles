@@ -11,7 +11,7 @@ return function(use)
   use 'rhysd/committia.vim'
   use 'nvim-telescope/telescope-symbols.nvim'
   use 'mbbill/undotree'
-  use 'towolf/vim-helm'
+  -- use 'towolf/vim-helm'
 
   -- colorschemes
   use 'wittyjudge/gruvbox-material.nvim'
