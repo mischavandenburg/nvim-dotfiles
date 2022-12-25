@@ -20,3 +20,10 @@ vim.keymap.set('n', '<leader>se', require('telescope.builtin').symbols, { desc =
 
 -- undotree
 vim.keymap.set('n', '<leader>u', '<cmd>UndotreeToggle<cr>', { desc = '[U]ndotree' })
+
+-- nvim-tree file explorer
+
+vim.keymap.set('n', '<leader>ft', '<cmd>NvimTreeToggle<cr>', { desc = '[F]ile tree [T]oggle' })
+vim.keymap.set('n', '<leader>ff', '<cmd>NvimTreeFocus<cr>', { desc = '[F]ile tree [F]ocus' })
+
+
