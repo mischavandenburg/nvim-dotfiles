@@ -11,6 +11,8 @@ return function(use)
   use 'rhysd/committia.vim'
   use 'nvim-telescope/telescope-symbols.nvim'
   use 'mbbill/undotree'
+  use 'glepnir/dashboard-nvim'
+
   -- use 'towolf/vim-helm'
 
   -- markdown related
