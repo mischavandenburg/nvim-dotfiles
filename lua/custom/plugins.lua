@@ -12,6 +12,7 @@ return function(use)
   use 'nvim-telescope/telescope-symbols.nvim'
   use 'mbbill/undotree'
   use 'glepnir/dashboard-nvim'
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- use 'towolf/vim-helm'
 
