@@ -1,12 +1,6 @@
--- local home = os.getenv('HOME')
 local db = require('dashboard')
--- macos
--- db.preview_command = 'cat | lolcat -F 0.3'
--- linux
---- db.preview_command = 'ueberzug'
---
--- db.preview_file_path = home .. '/.config/nvim/static/neovim.cat'
---
+local quote = "If you do only easy things, your life will be hard. If you do hard things, your life will become easy. - Les Brown"
+
 db.default_banner = {
     "",
     "",
@@ -17,10 +11,12 @@ db.default_banner = {
     " ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║",
     " ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝",
     "",
+    "",
+    quote,
+    "",
+    ""
 }
 
--- db.preview_file_height = 11
--- db.preview_file_width = 70
 db.custom_center = {
     {icon = '  ',
         desc = 'Recently opened files                   ',

@@ -13,6 +13,7 @@ vim.opt.undodir = vim.fn.expand('~/.nvim/undodir')
 
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 8
+o.linebreak = true
 
 -- these keep the cursor in the middle when scrolling with ctrl d and u
 -- from https://github.com/ThePrimeagen/init.lua
