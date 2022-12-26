@@ -4,6 +4,9 @@ end
 --- LazyGit
 map('n', '<leader>gg', '<cmd>LazyGit<cr>')
 
+-- jk to esc
+map('i', 'jk', '<Esc>')
+
 --- Clipboard
 map('n', 'Y', '"+y')
 map('v', 'Y', '"+y')
@@ -17,6 +20,7 @@ map('n', '<leader>dl', '<cmd>%s/^\\s\\+$//<cr>')
 
 -- telescope
 vim.keymap.set('n', '<leader>se', require('telescope.builtin').symbols, { desc = '[S]earch [E]mojis' })
+vim.keymap.set('n', '<leader>sr', require('telescope.builtin').oldfiles, { desc = '[S]earch [R]ecently opened files' })
 
 -- undotree
 vim.keymap.set('n', '<leader>u', '<cmd>UndotreeToggle<cr>', { desc = '[U]ndotree' })
