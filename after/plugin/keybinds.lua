@@ -38,7 +38,7 @@ vim.keymap.set('n', '<leader>fc', '<cmd>NvimTreeFindFile<cr>', { desc = '[F]ile 
 -- file tree: open file tree in openstack repo and change directory to it
 vim.keymap.set('n', '<leader>fa', '<cmd>NvimTreeOpen ~/git/Openstack/<cr><cmd>cd ~/git/Openstack/<cr>', { desc = '[F]ile tree [A]msterdam' })
 vim.keymap.set('n', '<leader>fv', '<cmd>NvimTreeOpen ~/.config/nvim/<cr><cmd>cd ~/.config/nvim/<cr>', { desc = '[F]ile tree [V]im' })
-vim.keymap.set('n', '<leader>fb', '<cmd>NvimTreeOpen ~/obsidian/second-brain/<cr><cmd>cd ~/obsidian/second-brain/<cr>', { desc = '[F]ile tree [V]im' })
+vim.keymap.set('n', '<leader>fb', '<cmd>NvimTreeOpen ~/obsidian/second-brain/<cr><cmd>cd ~/obsidian/second-brain/<cr>', { desc = '[F]ile tree [B]rain' })
 
 
 -- markdown preview
