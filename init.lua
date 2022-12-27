@@ -340,7 +340,8 @@ end
 local servers = {
   -- clangd = {},
   -- gopls = {},
-  pyright = {},
+  -- pyright = {},
+  pylsp = {},
   -- rust_analyzer = {},
   -- tsserver = {},
   yamlls = {
