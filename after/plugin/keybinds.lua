@@ -38,3 +38,20 @@ vim.keymap.set('n', '<leader>fv', '<cmd>NvimTreeOpen ~/.config/nvim/<cr><cmd>cd 
 vim.keymap.set('n', '<leader>mp', '<cmd>MarkdownPreview<cr>', { desc = '[M]arkdown [P]review' })
 vim.keymap.set('n', '<leader>ms', '<cmd>MarkdownPreviewStop<cr>', { desc = '[M]arkdown [S]top preview' })
 vim.keymap.set('n', '<leader>mt', '<cmd>MarkdownPreviewToggle<cr>', { desc = '[M]arkdown [T]oggle' })
+
+-- bufferline
+
+vim.keymap.set('n', '<S-l>',':bnext<CR>')
+vim.keymap.set('n', '<S-h>',':bprevious<CR>')
+vim.keymap.set('n', '<leader>c','<cmd>Bdelete!<cr>', { desc = '[C]lose buffer'} )
+
+vim.keymap.set('n', '<leader>1','<Cmd>BufferLineGoToBuffer 1<CR>')
+vim.keymap.set('n', '<leader>2','<Cmd>BufferLineGoToBuffer 2<CR>')
+vim.keymap.set('n', '<leader>3','<Cmd>BufferLineGoToBuffer 3<CR>')
+vim.keymap.set('n', '<leader>4','<Cmd>BufferLineGoToBuffer 4<CR>')
+vim.keymap.set('n', '<leader>5','<Cmd>BufferLineGoToBuffer 5<CR>')
+vim.keymap.set('n', '<leader>6','<Cmd>BufferLineGoToBuffer 6<CR>')
+vim.keymap.set('n', '<leader>7','<Cmd>BufferLineGoToBuffer 7<CR>')
+vim.keymap.set('n', '<leader>8','<Cmd>BufferLineGoToBuffer 8<CR>')
+vim.keymap.set('n', '<leader>9','<Cmd>BufferLineGoToBuffer 9<CR>')
+vim.keymap.set('n', '<leader>$','<Cmd>BufferLineGoToBuffer -1<CR>')

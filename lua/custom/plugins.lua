@@ -14,6 +14,7 @@ return function(use)
   use 'glepnir/dashboard-nvim'
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
+  use 'moll/vim-bbye'
   -- use 'towolf/vim-helm'
 
   -- markdown related
