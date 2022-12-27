@@ -344,6 +344,7 @@ local servers = {
   pylsp = {},
   -- rust_analyzer = {},
   -- tsserver = {},
+  ansiblels ={},
   yamlls = {
     yaml = {
       schemaStore = {
