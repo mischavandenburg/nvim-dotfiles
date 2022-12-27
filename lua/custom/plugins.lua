@@ -15,7 +15,7 @@ return function(use)
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
   use 'moll/vim-bbye'
-  -- use 'towolf/vim-helm'
+  use 'towolf/vim-helm'
 
   -- markdown related
 use 'ixru/nvim-markdown'
