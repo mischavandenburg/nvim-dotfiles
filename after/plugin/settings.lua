@@ -9,7 +9,7 @@ o.termguicolors = true
 g.gruvbox_material_enable_italic_comment = 1
 
 -- undo
-vim.opt.undodir = vim.fn.expand('~/.nvim/undodir')
+-- vim.opt.undodir = vim.fn.expand('~/.nvim/undodir')
 
 -- scrolling
 vim.opt.relativenumber = true
