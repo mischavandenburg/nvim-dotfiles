@@ -16,7 +16,7 @@ map('v', 'Y', '"+y')
 map('n', '<leader>rr', '<cmd>w<cr><cmd>:term python3 %<cr>')
 
 -- run current buffer, for other coding
-map('n', '<leader><leader>r', '<cmd>source %<cr>')
+map('n', '<leader><leader>r', '<cmd>w<cr><cmd>source %<cr>')
 
 -- whitespaces
 -- remove whitespace from lines

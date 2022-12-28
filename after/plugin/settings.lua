@@ -11,6 +11,7 @@ g.gruvbox_material_enable_italic_comment = 1
 -- undo
 vim.opt.undodir = vim.fn.expand('~/.nvim/undodir')
 
+-- scrolling
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 8
 o.linebreak = true
@@ -23,3 +24,17 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- and these are for searching
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
+-- indentation
+
+o.expandtab = true              -- convert tabs to spaces
+o.tabstop = 2                   -- insert 2 spaces for a tab
+o.shiftwidth = 2                -- the number of spaces inserted for each indentation
+o.smartindent = true
+
+-- windows
+vim.o.splitbelow = true
+vim.o.splitright = true
+
+-- completion
+vim.o.timeoutlen = 300 -- time to wait for a mapped sequence to complete
