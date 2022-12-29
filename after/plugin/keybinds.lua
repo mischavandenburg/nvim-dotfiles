@@ -18,9 +18,12 @@ map('n', '<leader>rr', '<cmd>w<cr><cmd>:term python3 %<cr>')
 -- run current buffer, for other coding
 map('n', '<leader><leader>r', '<cmd>w<cr><cmd>source %<cr>')
 
--- whitespaces
+-- whitespaces and tabs
+
 -- remove whitespace from lines
-map('n', '<leader>dl', '<cmd>%s/^\\s\\+$//<cr>')
+vim.keymap.set('n', '<leader>dw', '<cmd>%s/^\\s\\+$//<cr>', { desc = '[D]elete [W]hitespace' })
+-- For Obsidian bulleted lists. Markdown-nvim uses spaces to create the lists, I need tabs in Obsidian.
+vim.keymap.set('n', '<leader>dt', '%retab!', { desc = '[D]elete [T]abs' })
 
 -- telescope
 vim.keymap.set('n', '<leader>se', require('telescope.builtin').symbols, { desc = '[S]earch [E]mojis' })
@@ -51,14 +54,3 @@ vim.keymap.set('n', '<leader>mt', '<cmd>MarkdownPreviewToggle<cr>', { desc = '[M
 vim.keymap.set('n', '<S-l>',':bnext<CR>')
 vim.keymap.set('n', '<S-h>',':bprevious<CR>')
 vim.keymap.set('n', '<leader>c','<cmd>Bdelete!<cr>', { desc = '[C]lose buffer'} )
-
-vim.keymap.set('n', '<leader>1','<Cmd>BufferLineGoToBuffer 1<CR>')
-vim.keymap.set('n', '<leader>2','<Cmd>BufferLineGoToBuffer 2<CR>')
-vim.keymap.set('n', '<leader>3','<Cmd>BufferLineGoToBuffer 3<CR>')
-vim.keymap.set('n', '<leader>4','<Cmd>BufferLineGoToBuffer 4<CR>')
-vim.keymap.set('n', '<leader>5','<Cmd>BufferLineGoToBuffer 5<CR>')
-vim.keymap.set('n', '<leader>6','<Cmd>BufferLineGoToBuffer 6<CR>')
-vim.keymap.set('n', '<leader>7','<Cmd>BufferLineGoToBuffer 7<CR>')
-vim.keymap.set('n', '<leader>8','<Cmd>BufferLineGoToBuffer 8<CR>')
-vim.keymap.set('n', '<leader>9','<Cmd>BufferLineGoToBuffer 9<CR>')
-vim.keymap.set('n', '<leader>$','<Cmd>BufferLineGoToBuffer -1<CR>')
