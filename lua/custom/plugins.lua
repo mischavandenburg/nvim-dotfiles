@@ -18,7 +18,7 @@ return function(use)
   use 'towolf/vim-helm'
 
   -- markdown related
-use 'ixru/nvim-markdown'
+  use 'ixru/nvim-markdown'
 use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
