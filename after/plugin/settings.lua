@@ -28,8 +28,8 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- indentation
 
 o.expandtab = true              -- convert tabs to spaces
-o.tabstop = 2                   -- insert 2 spaces for a tab
-o.shiftwidth = 2                -- the number of spaces inserted for each indentation
+o.tabstop = 4                   -- insert 2 spaces for a tab
+o.shiftwidth = 4                -- the number of spaces inserted for each indentation
 o.smartindent = true
 
 -- windows
