@@ -23,7 +23,7 @@ map('n', '<leader><leader>r', '<cmd>w<cr><cmd>source %<cr>')
 -- remove whitespace from lines
 vim.keymap.set('n', '<leader>dw', '<cmd>%s/^\\s\\+$//<cr>', { desc = '[D]elete [W]hitespace' })
 -- For Obsidian bulleted lists. Markdown-nvim uses spaces to create the lists, I need tabs in Obsidian.
-vim.keymap.set('n', '<leader>dt', '%retab!', { desc = '[D]elete [T]abs' })
+vim.keymap.set('n', '<leader>dt', '<cmd>set noet<cr><cmd>%retab!<cr><cmd>set et<cr>', { desc = '[D]elete [T]abs' })
 
 -- telescope
 vim.keymap.set('n', '<leader>se', require('telescope.builtin').symbols, { desc = '[S]earch [E]mojis' })
