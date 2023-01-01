@@ -27,6 +27,7 @@ use({
   -- colorschemes
   use 'wittyjudge/gruvbox-material.nvim'
 
+  use {"shortcuts/no-neck-pain.nvim", tag = "*" }
   use({
     "folke/zen-mode.nvim",
     config = function()
