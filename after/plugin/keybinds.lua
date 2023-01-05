@@ -54,3 +54,7 @@ vim.keymap.set('n', '<leader>mt', '<cmd>MarkdownPreviewToggle<cr>', { desc = '[M
 vim.keymap.set('n', '<S-l>',':bnext<CR>')
 vim.keymap.set('n', '<S-h>',':bprevious<CR>')
 vim.keymap.set('n', '<leader>c','<cmd>Bdelete!<cr>', { desc = '[C]lose buffer'} )
+
+-- No Neck Pain for centering the window
+
+vim.keymap.set('n', '<leader>nn','<cmd>NoNeckPain<cr>', { desc = '[N]o [N]eckpain'} )
